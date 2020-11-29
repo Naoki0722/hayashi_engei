@@ -1,0 +1,465 @@
+/* リセットcss */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Noto Serif JP', serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* 記載内容 */
+header {
+  background-color: rgba(255, 211, 211, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header-title {
+  font-size: 30px;
+  padding: 20px 0;
+  text-align: center;
+  width: 93%;
+}
+
+.hamburger {
+  height: 40px;
+  width: 6%;
+  position: relative;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.hamburger span:nth-of-type(1) {
+  top: 10px;
+}
+.hamburger span:nth-of-type(2) {
+  top: 20px;
+}
+.hamburger span:nth-of-type(3) {
+  top: 30px;
+}
+
+.top_eyecatch {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.top_image {
+  width: 100%;
+}
+
+.top_eyecatch h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 227, 227, 0.76);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 10px 0;
+}
+
+.top_eyecatch p {
+  text-align: right;
+  color: rgba(255, 20, 203, 1);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.summary h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0 20px 0;
+}
+
+.summary img {
+  width: 90%;
+  display: block;
+  margin: 10px auto 50px;
+}
+
+.first-text {
+  margin-bottom: 15px;
+}
+
+.first-text,
+.second-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.second-text {
+  margin-bottom: 50px;
+}
+
+.sympathy_part {
+  text-align: center;
+}
+
+.sympathy_part h2 {
+  font-size: 24px;
+  color: #FF5757;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sympathy_part ul {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto 30px;
+
+}
+
+.sympathy_part li {
+  list-style: circle;
+}
+
+.sympathy_part p {
+  text-align: center;
+}
+
+.appeal {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+
+.sympathy_part button {
+  background-color: #FFDEDE;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 8px;
+  margin: 30px 0;
+}
+
+.delimiter {
+  
+  width: 70%;
+  height: 5px;
+  border: 1px solid #EBDBCC;
+  border-radius: 10px;
+  background-color: #EBDBCC;
+  margin: 0 auto;
+  
+}
+
+.benefit_contents {
+  background-color: rgba(255, 221, 221, 0.38);
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+.content {
+  padding: 40px 0 20px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.sub_title {
+  color: rgba(255, 52, 39, 1);
+  margin: 20px 0;
+}
+
+.content img {
+  width: 80%;
+}
+
+.content_description {
+  font-size: 15px;
+  line-height: 30px;
+  width: 80%;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.flower_language {
+  background-color: rgba(255, 167, 167, 0.4);
+  margin: 40px 0;
+}
+
+.flower_language h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.flower_language h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.flower_detail {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home_layout {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.home_layout img {
+  width: 80%;
+  margin: 30px 0;
+}
+
+.problem_solving {
+}
+
+.problem_solving p {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.solution_area {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.solution_area p {
+  background-color: #FFD7D7;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px 0;
+  margin: 0 auto 10px;
+  /* position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0); */
+}
+
+.solution_area ol {
+  width: 60%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+.solution_area li {
+  margin: 10px 0;
+}
+
+.lineup_area {
+  margin: 40px 0;
+  background: rgba(173, 173, 173, 0.12);
+}
+
+.lineup_title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.lineup_title h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.product_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 40%;
+  /* text-align: center; */
+}
+
+.product_image img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shipping {
+  margin: 30px auto;
+}
+
+.shipping tr {
+  border: 1px solid gray;
+}
+
+.shipping th {
+  border-right: 1px solid gray;
+}
+
+.shipping th,
+.shipping td {
+  padding: 10px 20px;
+}
+
+.cta_area {
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.cta_area p {
+  padding: 20px;
+}
+
+.cta_area button {
+  background-color: #FFDEDE;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 8px;
+  margin: 30px 0 10px;
+}
+
+.information {
+  margin: 10%;
+}
+
+.information h2 {
+  text-align: center;  
+}
+
+.contact {
+  margin: 10%;
+}
+
+.contact_form {
+  width: 80%;
+}
+
+
+.company {
+  margin: 20px 0;
+}
+
+.company h2 {
+  text-align: center;
+}
+.company_detail {
+  display: flex;
+}
+
+.map_img {
+  width: 40%;
+}
+.map_img img {
+  width: 90%;
+}
+
+
+footer {
+  background-color: rgba(255, 211, 211, 1);
+  text-align: center;
+  padding: 20px;
+  color: rgba(132, 132, 132, 1);
+
+}
