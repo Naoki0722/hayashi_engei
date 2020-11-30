@@ -30,7 +30,11 @@ time, mark, audio, video {
 
 body {
     line-height:1;
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Roboto', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+h2,h3,h4,h5 {
+  /* font-family: 'Noto Serif JP', serif; */
 }
 
 article,aside,details,figcaption,figure,
@@ -106,6 +110,7 @@ input, select {
 /* 記載内容 */
 header {
   background-color: rgba(255, 211, 211, 1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,17 +118,22 @@ header {
 
 
 .header-title {
-  font-size: 30px;
+  font-size: 1.8rem;
   padding: 20px 0;
+  margin-left: 5%;
   text-align: center;
   width: 93%;
+}
+
+.header-nav {
+  display: none;
 }
 
 .hamburger {
   height: 40px;
   width: 6%;
   position: relative;
-  margin-right: 20px;
+  margin-right: 5%;
 }
 
 .hamburger span {
@@ -144,6 +154,7 @@ header {
   top: 30px;
 }
 
+/* main */
 .top_eyecatch {
   position: relative;
   margin-bottom: 10%;
@@ -151,48 +162,59 @@ header {
 
 .top_image {
   width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .top_eyecatch h2 {
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
   background-color: rgba(255, 227, 227, 0.76);
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  padding: 10px 0;
+  padding: 3% 1%;
 }
 
 .top_eyecatch p {
   text-align: right;
   color: rgba(255, 20, 203, 1);
-  padding: 10px;
-  font-size: 20px;
+  padding: 3%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.summary {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.summary_block {
+  margin: 0 auto;
 }
 
 .summary h2 {
   text-align: center;
-  font-size: 30px;
-  padding: 10px 0 20px 0;
+  font-size: 1.8rem;
+  padding: 3% 0 4% 0;
 }
 
 .summary img {
-  width: 90%;
+  width: 80%;
   display: block;
-  margin: 10px auto 50px;
+  margin: 3% auto 10%;
 }
 
-.first-text {
-  margin-bottom: 15px;
-}
 
 .first-text,
 .second-text {
-  text-align: center;
-  font-size: 15px;
+  width: 100%;
+  font-size: 1.0rem;
+  margin-bottom: 5%;
 }
 
 .second-text {
@@ -204,7 +226,7 @@ header {
 }
 
 .sympathy_part h2 {
-  font-size: 24px;
+  font-size: 1.6rem;
   color: #FF5757;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -213,22 +235,52 @@ header {
 
 .sympathy_part ul {
   text-align: left;
+  font-weight: bold;
   width: 70%;
   margin: 0 auto 30px;
 
 }
 
 .sympathy_part li {
-  list-style: circle;
+  list-style: square;
 }
 
 .sympathy_part p {
   text-align: center;
 }
 
+.sympathy_img img {
+  width: 80%;
+}
+
+.formBalloon {
+  padding-bottom: 13px;
+  display: block;
+  text-align: center;
+}
+.formBalloon .formBalloonContent {
+  border-radius: 3px 3px 0px 0px;
+  width: 20px;
+  height: 50px;
+  position: relative;
+  background: #101177;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.formBalloon .formBalloonArrow{
+  border: 30px solid transparent;
+  border-top: 30px solid #101177;
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
 .appeal {
   color: red;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 30px 0 20px;
 }
@@ -258,15 +310,25 @@ header {
   text-align: center;
 }
 
+.benefit_content {
+  text-align: left;
+}
+.img_pc {
+  display: none;
+}
+
 .content {
   padding: 40px 0 20px;
 }
 
 .content h2 {
+  font-size: 1.7rem;
   margin-bottom: 10px;
 }
 
 .sub_title {
+  font-size: 1.2rem;
+  font-weight: bold;
   color: rgba(255, 52, 39, 1);
   margin: 20px 0;
 }
@@ -276,7 +338,15 @@ header {
 }
 
 .content_description {
-  font-size: 15px;
+  font-size: 1.0rem;
+  line-height: 30px;
+  width: 80%;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.content_description2 {
+  font-size: 1.0rem;
   line-height: 30px;
   width: 80%;
   padding: 50px 0;
@@ -285,10 +355,12 @@ header {
 
 .flower_language {
   background-color: rgba(255, 167, 167, 0.4);
-  margin: 40px 0;
+  margin: 50px 0;
+  padding: 30px 0;
 }
 
 .flower_language h2 {
+  font-size: 1.5rem;
   text-align: center;
   padding: 20px 0;
 }
@@ -300,24 +372,31 @@ header {
 
 .flower_detail {
   padding: 20px 0;
-  width: 80%;
+  text-align: center;
+}
+.flower_detail p {
   margin: 0 auto;
+  margin-bottom: 15px;
+  color: red;
 }
 
 .home_layout {
+  font-size: 1.4rem;
   text-align: center;
   margin: 10px 0;
 }
 
 .home_layout img {
   width: 80%;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
-.problem_solving {
+.problem_content {
+  margin: 50px 0;
 }
 
-.problem_solving p {
+.problem_content p {
+  font-size: 1.3rem;
   text-align: center;
   margin: 20px 0;
   font-weight: bold;
@@ -326,27 +405,30 @@ header {
 .solution_area {
   border: 1px solid gray;
   border-radius: 10px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
+  padding-bottom: 4%;
 }
 
-.solution_area p {
+.solution_area h3 {
+  font-size: 1.1rem;
   background-color: #FFD7D7;
+  text-align: center;
   border: none;
   border-radius: 10px;
-  width: 70%;
+  width: 85%;
   padding: 10px 0;
   margin: 0 auto 10px;
-  /* position: absolute;
-  top: -10px;
+  position: absolute;
+  top: -20px;
   left: 50%;
-  transform: translate(-50%, 0); */
+  transform: translate(-50%, 0);
 }
 
 .solution_area ol {
   width: 60%;
-  margin: 0 auto;
+  margin: 40px auto 0;
   /* text-align: center; */
 }
 
@@ -361,12 +443,12 @@ header {
 
 .lineup_title {
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .lineup_title h2 {
-  font-size: 25px;
-  padding-bottom: 10px;
+  font-size: 1.6rem;
+  padding-bottom: 25px;
 }
 
 .product_area {
@@ -377,16 +459,22 @@ header {
 
 .product {
   width: 40%;
-  /* text-align: center; */
 }
 
 .product_image img {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+.shipping_title {
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: 1.6rem;
 }
 
 .shipping {
-  margin: 30px auto;
+  margin: 30px auto 10px;
+  width: 70%;
 }
 
 .shipping tr {
@@ -400,6 +488,12 @@ header {
 .shipping th,
 .shipping td {
   padding: 10px 20px;
+  text-align: center;
+}
+
+.shipping_info p {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .cta_area {
@@ -410,6 +504,10 @@ header {
 
 .cta_area p {
   padding: 20px;
+  font-size: 1.2rem;
+  color: red;
+  text-decoration:  underline;
+  font-weight: bold;
 }
 
 .cta_area button {
@@ -425,41 +523,328 @@ header {
 }
 
 .information h2 {
-  text-align: center;  
+  text-align: center; 
+  font-size: 1.7rem;
+  margin: 40px 0 30px;
+}
+
+.sns {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info img {
+  width: 60%;
+  margin: 10px 0 40px;
 }
 
 .contact {
-  margin: 10%;
+  margin: 10% auto;
+  width: 90%;
 }
+
+.contact h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
 
 .contact_form {
-  width: 80%;
+  border: 1px solid gray;
+  border-bottom: none;
+  margin: 0 auto;
+  width: 70%;
 }
 
+
+.contact_form th,
+.contact_form td {
+  display: block;
+}
+
+.contact_form th,
+.contact_form td {
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.contact_form th {
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(255, 211, 211, 1);
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 93%;
+  border: none;
+  background-color: #f8f8f8;
+  margin: 5px 3%;
+}
+
+.contact_form input {
+  height: 30px;
+}
+
+.contact_form textarea {
+  height: 150px;
+}
+
+.contact_submit {
+  font-size: 1.2rem;
+  display: block;
+  margin: 20px auto;
+  background-color: #FFDEDE;
+  border: none;
+  border-radius: 10px;
+  padding: 2% 5%;
+}
 
 .company {
   margin: 20px 0;
 }
 
 .company h2 {
+  font-size: 1.6rem;
   text-align: center;
+  margin: 30px 0;
 }
 .company_detail {
   display: flex;
+  align-items: center;
 }
 
 .map_img {
-  width: 40%;
+  width: 60%;
+  margin: 0 0 0 5%;
 }
 .map_img img {
   width: 90%;
 }
 
+.company_info {
+  margin: 0 5%;
+}
 
 footer {
   background-color: rgba(255, 211, 211, 1);
   text-align: center;
   padding: 20px;
   color: rgba(132, 132, 132, 1);
+
+}
+
+/* タブレット縦 /スマートフォン横 */
+@media screen and (min-width: 481px) {
+  .top_eyecatch h2 {
+    font-size: 1.7rem;
+    width: 70%;
+  }
+
+  .sympathy_contents ul{
+    width: 35%;
+  }
+}
+
+/* デスクトップ/タブレット横 */
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .header-title {
+    width: 40%;
+    text-align: left;
+  }
+  .header-nav {
+    width: 70%;
+    font-size: 1.0rem;
+    display: block;
+  }
+
+  .flex_content {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .flex_content li {
+    margin: 0 1%;
+  }
+
+  .top_eyecatch h2 {
+    font-size: 1.8rem;
+    width: 50%;
+    top: 10%;
+
+  }
+
+  .top_eyecatch p {
+    font-size: 1.8rem;
+  }
+  .summary {
+    width: 100%;
+  }
+  .summary_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .summary {
+    margin-bottom: 40px;
+  }
+  .image_block {
+    width: 70%;
+  }
+
+  .contents_block {
+    width: 60%;
+  }
+
+  .first-text,
+  .second-text {
+    text-align: left;
+  }
+
+  .sympathy_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 30px;
+  
+  }
+
+  .sympathy_contents {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .sympathy_contents li {
+    padding: 10px 0;
+  }
+
+  .sympathy_img  {
+    width: 50%;
+  }
+  
+  .prev_appeal {
+    font-size: 1.3rem;
+    line-height: 50px;
+  }
+
+  .appeal {
+    font-size: 2.5rem;
+  }
+
+  .benefit_area {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .benefit_img {
+    width: 50%;
+    margin: 0 1% 0 5%;
+  }
+  .benefit_img2 {
+    width: 50%;
+    margin: 0 5% 0;
+  }
+  .content_description2 {
+    font-size: 1.0rem;
+    line-height: 30px;
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 1% 0 20%;
+  }
+
+  .img_mobile {
+    display: none;
+  }
+
+  .img_pc {
+    display: block;
+  }
+
+  .benefit_contents {
+    padding-bottom: 40px;
+  }
+  .benefit_content {
+    width: 40%;
+  }
+
+  .flower_detail {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .flower_detail p {
+    padding: 15px 0;
+    color: rgb(235, 44, 44);
+    font-size: 1.5rem;
+  }
+
+  .home_layout img {
+    width: 50%;
+    margin: 40px 0;
+  }
+
+  .solution_area {
+    width: 60%;
+    padding-bottom: 2%;
+  }
+  .solution_area ol {
+    width: 60%;   
+    text-align: center;
+  }
+  
+  .solution_area li {
+    padding: 10px 0;
+  }
+  
+  .shipping {
+    width: 60%;
+  }
+
+  .shipping th,
+  .shipping td {
+    padding: 15px 0;
+  }
+  
+  .shipping_info p {
+    text-align: center;
+  }
+
+  .contact_form {
+    width: 50%;
+  }
+
+  .map_img {
+    width: 50%;
+    margin: 0 0 0 5%;
+  }
+
+  .map_img img {
+    width: 80%;
+  }
+
+  .company_info {
+    font-size: 1.5rem;
+  }
+
+  .company_info h3 {
+    margin: 0 0 50px;
+  }
 
 }
